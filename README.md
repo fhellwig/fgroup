@@ -1,22 +1,25 @@
 # group
 
-A utility for grouping arrays of objects
+Fluent interface for grouping arrays of objects
 
-Given an array of objects, groups them by a specified key. Uses a fluid interface for readability.
+## Installation
 
     npm install group --save
 
-## Example
+## Usage
+
+Requiring the module returns a function. Calling this function sets up the ability to chain the functions together. The end result is another function that can be called on your dataset. The following is a grouping function that is useful for the sample data included in this project.
 
 ```javascript
 var group = require('group');
 
-var groupByRegion = group('people').by('regionId')
-        .include('regionId', 'regionName')
-        .details('salesRep', 'sales')
-        .notnull('salesRep');
+var groupByRegion = group('people')            // the name of array of grouped objects
+        .by('regionId')// the property by which to group
+        .include('regionId', 'regionName') // what to include in each group
+        .details('salesRep', 'sales') // what to include in each of the grouped objects
+        .notnull('salesRep'); // skip it if this property is null
 
-var data = [...];
+var data = require('./sample');
 
-var groupedByRegion = groupByRegion(data);
+var groupedData = groupByRegion(data);
 ```
