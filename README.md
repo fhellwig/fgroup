@@ -19,7 +19,7 @@ The following is a grouping function that is useful for the sample data included
 ```javascript
 var group = require('group');
 
-var groupByRegion = group('people')             // the name of array of grouped objects
+var groupByRegion = group('people')             // the name of each array of grouped objects
         .by('regionId')                         // the property by which to group
         .include('regionId', 'regionName')      // what to include in each group
         .details('salesRep', 'sales')           // what to include in each of the grouped objects
