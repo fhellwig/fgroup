@@ -30,4 +30,5 @@ var data = require('./sample');
 var groupedData = groupByRegion(data);
 ```
 
-The `notnull` parameter is useful when dealing with data retrieved from a database using on an outer join. In that case, you will typically get back data that has one parent record with the child fields set to null. You would want to group this as a parent record with an empty children array and *not* a parent record with a child array of length one and that one record having nothing but nulls in it.
+The `notnull` parameter is useful when dealing with data retrieved from a database using on an outer join. In that case, you will typically get back data that has one parent record with the child fields set to null. You would want to group this as a parent record with an empty children array and *not* a parent record with a child array of length one and that one grouped object containing only null values!
+
