@@ -32,7 +32,7 @@ var groupedData = groupByRegion(data);
 
 The `notnull` parameter is useful when dealing with data retrieved from a database using on an outer join. In that case, you will typically get back data that has one parent record with the child fields set to null. You would want to group this as a parent record with an empty children array and *not* a parent record with a child array of length one and that one grouped object containing only null values.
 
-The chained parameter functions can be called in any order. They can also be omitted but that will include all properties in each parent object (`include` not called) or in each grouped object (`details` not called). If your forget to call the `by` function, then no grouping is done and you will get back the your input data.
+The chained parameter functions can be called in any order. They can also be omitted but that will include all properties in each parent object (`include` not called) or in each grouped object (`details` not called). If your forget to call the `by` function, then no grouping is done and you will get back your input data.
 
 The intent is to create a grouping function once in your code and then reuse it. You could create it dynamically, but typically, when dealing with data from a database, you will know what columns you need to group for each select.
 
