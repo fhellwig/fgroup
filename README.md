@@ -1,15 +1,15 @@
-# group
+# fgroup
 
-Fluent interface for grouping arrays of objects
+Fluent interface for grouping object arrays
 
 ## Installation
 
-    npm install group --save
+    npm install fgroup --save
 
 ## Usage
 
 ```javascript
-var group = require('group');
+var group = require('fgroup');
 ```
 
 This creates and returns a function. Calling this function sets up the chaining feature and creates another function that is bound to your grouping parameters. This is the function you call on your dataset.
@@ -17,7 +17,7 @@ This creates and returns a function. Calling this function sets up the chaining 
 The following is a grouping function that is useful for the sample data included in this project.
 
 ```javascript
-var group = require('group');
+var group = require('fgroup');
 
 var groupByRegion = group('people')        // the name of each array of grouped objects
         .by('regionId')                    // the property by which to group

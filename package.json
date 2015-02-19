@@ -1,19 +1,19 @@
 {
-  "name": "group",
-  "version": "0.0.0",
-  "description": "0.0.1",
-  "main": "group.js",
+  "name": "fgroup",
+  "version": "0.0.1",
+  "description": "Fluent interface for grouping object arrays",
+  "main": "fgroup.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fhellwig/group.git"
+    "url": "https://github.com/fhellwig/fgroup.git"
   },
   "author": "Frank Hellwig",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/fhellwig/group/issues"
+    "url": "https://github.com/fhellwig/fgroup/issues"
   },
-  "homepage": "https://github.com/fhellwig/group"
+  "homepage": "https://github.com/fhellwig/fgroup"
 }
