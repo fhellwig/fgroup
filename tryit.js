@@ -1,4 +1,4 @@
-var group = require('./group'),
+var group = require('./fgroup'),
     sample = require('./sample'),
     util = require('util');
 
