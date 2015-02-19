@@ -6,6 +6,15 @@ module.exports = function (children) {
     var _notnull;
 
     function group(items) {
+        if (typeof items === 'function') {
+            return function (err, data) {
+                if (err) {
+                    items(err);
+                } else {
+                    items(null, group(data));
+                }
+            };
+        }
         var results = [],
             grouped = {};
         items.forEach(function (item) {

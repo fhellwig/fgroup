@@ -36,8 +36,20 @@ The chained parameter functions can be called in any order. They can also be omi
 
 The intent is to create a grouping function once in your code and then reuse it. You could create it dynamically, but typically, when dealing with data from a database, you will know what columns you need to group for each select.
 
-Hope you find this useful. No license for this software. Just do with it what you want or need.
+### As a callback
 
+If the created grouping function is called with another function, then it is assumed that this is a callback function. The grouping function now becomes the new callback function. Here is a SQLite example:
 
+```javascript
+function getRegionalSales(db, callback) {
+    db.all('SELECT * FROM [regionalSalesView]', groupByRegion(callback));
+    // Assume this view is a left outer join between regions and sales staff.
+}
+```
 
+This is a convenience feature but it does add to the overall readability of the code and makes the intent clear.
+
+----
+
+I hope you find fgroup useful. This is unlicensed software. Just do with it what you want or need.
 
