@@ -38,7 +38,7 @@ The intent is to create a grouping function once in your code and then reuse it.
 
 ### As a callback
 
-If the created grouping function is called with another function, then it is assumed that this is a callback function. The grouping function now becomes the new callback function. Here is a SQLite example:
+If the created grouping function is called with another function, then it is assumed to be a callback function having the standard `callback(err, data)` signature. The grouping function now becomes the new callback function. Here is a SQLite example:
 
 ```javascript
 function getRegionalSales(db, callback) {
