@@ -1,0 +1,72 @@
+[
+    {
+        "sales": 98937,
+        "salesRep": "Mary",
+        "regionId": 1,
+        "regionName": "North",
+        "unimportantFact": "North is up"
+    },
+    {
+        "sales": 12937,
+        "salesRep": "Joe",
+        "regionId": 1,
+        "regionName": "North",
+        "unimportantFact": "North is up"
+    },
+    {
+        "sales": 38237,
+        "salesRep": "Bob",
+        "regionId": 1,
+        "regionName": "North",
+        "unimportantFact": "North is up"
+    },
+    {
+        "sales": 93728,
+        "salesRep": "Lisa",
+        "regionId": 2,
+        "regionName": "South",
+        "unimportantFact": "South is below"
+    },
+    {
+        "sales": 198362,
+        "salesRep": "Jane",
+        "regionId": 2,
+        "regionName": "South",
+        "unimportantFact": "South is below"
+    },
+    {
+        "sales": 2338,
+        "salesRep": "Mike",
+        "regionId": 2,
+        "regionName": "South",
+        "unimportantFact": "South is below"
+    },
+    {
+        "sales": 93728,
+        "salesRep": "Sarah",
+        "regionId": 3,
+        "regionName": "East",
+        "unimportantFact": "East is least"
+    },
+    {
+        "sales": 198362,
+        "salesRep": "Adam",
+        "regionId": 3,
+        "regionName": "East",
+        "unimportantFact": "East is least"
+    },
+    {
+        "sales": 92337,
+        "salesRep": "Chris",
+        "regionId": 3,
+        "regionName": "East",
+        "unimportantFact": "East is least"
+    },
+    {
+        "sales": null,
+        "salesRep": null,
+        "regionId": 4,
+        "regionName": "West",
+        "unimportantFact": "West is best"
+    }
+]
