@@ -24,7 +24,7 @@ module.exports = function (children) {
             } else {
                 var group = grouped[key];
                 if (!group) {
-                    group = extract(_include, item);
+                    group = extract(_include || [_by], item);
                     group[_children] = [];
                     grouped[key] = group;
                     results.push(group);

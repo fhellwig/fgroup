@@ -1,6 +1,6 @@
 {
   "name": "fgroup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fluent interface for grouping object arrays",
   "main": "fgroup.js",
   "scripts": {
